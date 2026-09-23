@@ -1,0 +1,21 @@
+name: Test RudderStack Transformations
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'transformations/**'
+
+jobs:
+  test-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test & Publish Transformations
+        uses: rudderlabs/rudder-transformation-action@v1.1.4
+        with:
+          metaPath: './transformations/meta.json'
+          email: ${{ secrets.RS_EMAIL }}
+          accessToken: ${{ secrets.RS_ACCESS_TOKEN }}
+          uploadTestArtifact: true
