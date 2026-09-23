@@ -1,0 +1,255 @@
+[
+  {
+    "type": "identify",
+    "userId": "acct_88213",
+    "anonymousId": "anon_44d7c210",
+    "channel": "web",
+    "context": {
+      "traits": {
+        "email": "user48213@mailinator.com",
+        "name": "User 48213",
+        "createdAt": "2026-09-23T10:14:02.000Z"
+      },
+      "app": {
+        "name": "RudderLabs JavaScript SDK",
+        "version": "3.7.6",
+        "namespace": "com.rudderlabs.javascript"
+      },
+      "library": {
+        "name": "RudderLabs JavaScript SDK",
+        "version": "3.7.6"
+      },
+      "page": {
+        "url": "https://www.website.com/signup",
+        "path": "/signup",
+        "title": "Sign Up",
+        "referrer": "$direct",
+        "initial_referrer": "$direct"
+      },
+      "locale": "en-US",
+      "screen": {
+        "width": 1920,
+        "height": 1080,
+        "density": 1,
+        "innerWidth": 1920,
+        "innerHeight": 1080
+      },
+      "timezone": "GMT+0000",
+      "sessionId": 1758622442298,
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
+      "isBot": false,
+      "bot": {
+        "category": "human",
+        "badIntent": 0.81,
+        "actsForUser": false,
+        "detectedBy": "jev",
+        "kindConfidence": 0.67
+      }
+    },
+    "messageId": "170cd977-ebb3-416f-a00c-577eaf2b3c62",
+    "request_ip": "185.220.101.7",
+    "integrations": {
+      "All": true
+    },
+    "originalTimestamp": "2026-09-23T10:14:02.300Z",
+    "sentAt": "2026-09-23T10:14:02.301Z"
+  },
+  {
+    "type": "track",
+    "event": "Checkout Started",
+    "userId": "acct_41077",
+    "anonymousId": "anon_agent_8821",
+    "channel": "web",
+    "context": {
+      "traits": {
+        "email": "dana.liu@acme.com",
+        "name": "Dana Liu"
+      },
+      "app": {
+        "name": "RudderLabs JavaScript SDK",
+        "version": "3.7.6",
+        "namespace": "com.rudderlabs.javascript"
+      },
+      "library": {
+        "name": "RudderLabs JavaScript SDK",
+        "version": "3.7.6"
+      },
+      "page": {
+        "url": "https://www.website.com/checkout",
+        "path": "/checkout",
+        "title": "Checkout",
+        "referrer": "https://www.website.com/cart",
+        "initial_referrer": "https://chatgpt.com/",
+        "initial_referring_domain": "chatgpt.com"
+      },
+      "locale": "en-US",
+      "screen": {
+        "width": 1280,
+        "height": 800,
+        "density": 1,
+        "innerWidth": 1280,
+        "innerHeight": 800
+      },
+      "timezone": "America/Los_Angeles",
+      "sessionId": 1758625770549,
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/140.0.0.0 Safari/537.36",
+      "isBot": true,
+      "bot": {
+        "category": "ai_agent",
+        "badIntent": 0.18,
+        "actsForUser": true,
+        "detectedBy": "jev",
+        "kindConfidence": 0.71
+      }
+    },
+    "properties": {
+      "order_id": "ord_5512099",
+      "value": 212.5,
+      "revenue": 212.5,
+      "currency": "USD",
+      "products": [
+        {
+          "product_id": "622c6f5d5cf86a4c77358033",
+          "sku": "8472-998-0112",
+          "name": "Cones of Dunshire",
+          "price": 42.5,
+          "quantity": 5
+        }
+      ],
+      "time_on_page_ms": 1840
+    },
+    "messageId": "91014883-8b3c-46b0-b9f1-2d8928f9f210",
+    "request_ip": "34.122.18.203",
+    "integrations": {
+      "All": true
+    },
+    "originalTimestamp": "2026-09-23T11:09:30.551Z",
+    "sentAt": "2026-09-23T11:09:30.552Z"
+  },
+  {
+    "type": "track",
+    "event": "Application Installed",
+    "anonymousId": "anon_install_9921",
+    "channel": "mobile",
+    "context": {
+      "os": {
+        "name": "Android",
+        "version": "9"
+      },
+      "app": {
+        "name": "My Application",
+        "build": "1",
+        "version": "1.0",
+        "namespace": "com.rudderstack.demo.myapplication"
+      },
+      "device": {
+        "id": "3c2edcdb0e25bb2c",
+        "name": "generic_arm64",
+        "type": "Android",
+        "model": "Android SDK built for arm64",
+        "manufacturer": "unknown"
+      },
+      "network": {
+        "wifi": true,
+        "carrier": "Android",
+        "cellular": true
+      },
+      "library": {
+        "name": "com.rudderstack.android.sdk.core",
+        "version": "1.7.1"
+      },
+      "locale": "en-US",
+      "screen": {
+        "width": 1080,
+        "height": 1920,
+        "density": 420
+      },
+      "timezone": "Asia/Kolkata",
+      "sessionId": 1758602995,
+      "userAgent": "Dalvik/2.1.0 (Linux; U; Android 9; Android SDK built for arm64 Build/PSR1.210301.009.B1)",
+      "isBot": true,
+      "bot": {
+        "category": "other_automation",
+        "badIntent": 0.84,
+        "actsForUser": false,
+        "detectedBy": "jev",
+        "kindConfidence": 0.78
+      }
+    },
+    "properties": {
+      "version": "1.0",
+      "build": 1
+    },
+    "messageId": "1758602995261-a7579db6-0f6f-4ec9-8a4a-2cabe101dd10",
+    "request_ip": "138.199.14.88",
+    "integrations": {
+      "All": true
+    },
+    "originalTimestamp": "2026-09-23T04:49:43.261Z",
+    "sentAt": "2026-09-23T04:49:55.295Z"
+  },
+  {
+    "type": "identify",
+    "userId": "acct_88477",
+    "anonymousId": "anon_5c1b33ef",
+    "channel": "web",
+    "context": {
+      "traits": {
+        "email": "maya.okafor@okaforconsulting.com",
+        "name": "Maya Okafor",
+        "company": {
+          "name": "Okafor Consulting"
+        },
+        "createdAt": "2026-09-23T10:31:44.000Z"
+      },
+      "app": {
+        "name": "RudderLabs JavaScript SDK",
+        "version": "3.7.6",
+        "namespace": "com.rudderlabs.javascript"
+      },
+      "library": {
+        "name": "RudderLabs JavaScript SDK",
+        "version": "3.7.6"
+      },
+      "page": {
+        "url": "https://www.website.com/signup?utm_source=reddit",
+        "path": "/signup",
+        "title": "Sign Up",
+        "search": "?utm_source=reddit",
+        "referrer": "https://www.reddit.com/",
+        "initial_referrer": "https://www.reddit.com/",
+        "referring_domain": "reddit.com"
+      },
+      "campaign": {
+        "source": "reddit",
+        "medium": "social"
+      },
+      "locale": "en-GB",
+      "screen": {
+        "width": 1512,
+        "height": 982,
+        "density": 2,
+        "innerWidth": 1512,
+        "innerHeight": 857
+      },
+      "timezone": "Europe/London",
+      "sessionId": 1758623504899,
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.6 Safari/605.1.15",
+      "isBot": false,
+      "bot": {
+        "category": "human",
+        "badIntent": 0.06,
+        "actsForUser": false,
+        "detectedBy": "jev",
+        "kindConfidence": 0.93
+      }
+    },
+    "messageId": "170cd977-ebb3-416f-a00c-577eaf2b3c71",
+    "request_ip": "81.2.69.142",
+    "integrations": {
+      "All": true
+    },
+    "originalTimestamp": "2026-09-23T10:31:44.901Z",
+    "sentAt": "2026-09-23T10:31:44.902Z"
+  }
+]
