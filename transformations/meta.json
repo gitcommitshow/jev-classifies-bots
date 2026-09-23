@@ -1,0 +1,13 @@
+{
+  "transformations": [
+    {
+      "file": "./code/jev-bot-layer.js",
+      "name": "Jev Bot Intelligence Layer",
+      "language": "javascript",
+      "description": "Classifies high-stakes events by kind (human, AI agent, crawler, bot) and bad intent using Jev by TypeSafe AI",
+      "test-input-file": "./code/testevents.json",
+      "expected-output": "./code/expectedoutput.json"
+    }
+  ],
+  "libraries": []
+}
