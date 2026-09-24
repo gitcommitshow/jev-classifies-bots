@@ -7,13 +7,11 @@ Labels each high-stakes event before it reaches your warehouse or marketing/anal
 1. **Who is behind it?** Human · AI agent · crawler · other automation
 3. **Is it an abuse?** A confidence score from 0 to 1
 
-[Comparison with deterministic rules](#why-jev-for-bot-classification)
-
 ![RudderStack transformation test showing Jev's verdict on an AI agent checkout](docs/screenshots/transformation-test.jpeg)
 
 ## Who this is for
 
-Data teams who need signup, login, checkout, and install events labeled before they reach analytics or the warehouse. Known bots are already caught by rules. This layer classifies the rest so you can drop abuse, keep real-user AI agents, and tag the rest for review.
+Data teams who need signup, login, checkout, and install events labeled before they reach analytics or the warehouse. Known bots can be caught by simple rules, but this layer classifies the rest so you can drop abuse, keep real-user AI agents, and tag the rest for review. Read [comparison with deterministic rules](#why-jev-for-bot-classification) for more details.
 
 ## Features
 
@@ -22,7 +20,6 @@ Data teams who need signup, login, checkout, and install events labeled before t
 - Clean bots out of DAU, funnels, and A/B tests
 - See AI and search crawler traffic as its own kind
 - Tag first, drop later - measure before you enforce
-
 
 
 ## What it adds to each evaluated event
@@ -36,8 +33,6 @@ Data teams who need signup, login, checkout, and install events labeled before t
 | `context.bot.kindConfidence` | 0 to 1                                                                                         | How sure Jev is about the category |
 | `context.bot.actsForUser`    | `true` / `false`                                                                               | A real person is behind it         |
 | `context.bot.detectedBy`     | `"jev"`                                                                                        | Which layer tagged it              |
-
-
 
 
 ## Quick start
@@ -82,7 +77,7 @@ Data teams who need signup, login, checkout, and install events labeled before t
 Rules ask "known bot?". Generally based on user-agent string.
 That misses bot farms in real browsers, and blocks AI agents buying for real customers.
 When agents have become the primary user, it is not a good idea to treat all bots the same.
-With Jev, we are able to identify the what `kind` of bot it is and whether they have a bad intent or not.
+With Jev, we are able to identify what `kind` of bot is it and whether it has a bad intent or not.
 
 ### What is Jev
 
@@ -102,3 +97,6 @@ A [transformation](https://www.rudderstack.com/docs/transformations/overview/) i
 ### How does this work with the deterministic Bot Management
 
 Use [Bot Management](https://www.rudderstack.com/docs/data-governance/bot-management/) for known bots, and set it to **Forward events with a flag** so those events still reach this layer. Jev only runs on events that still need a decision.
+
+## License
+MIT
