@@ -1,4 +1,4 @@
-# Jev Bot Intelligence Layer for event stream data
+# Jev Bot Intelligence Layer for real-time event stream data
 
 A [RudderStack](https://www.rudderstack.com/) transformation powered by [Jev](https://typesafe.ai).
 
